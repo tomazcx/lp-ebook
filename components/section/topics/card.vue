@@ -1,3 +1,12 @@
+<script setup lang="ts">
+defineProps<{ text: string }>();
+</script>
+
 <template>
-  <div class="bg-backgroundSecondary rounded-xl p-6 flex flex-col gap-3"></div>
+  <div
+    class="bg-backgroundSecondary leading-tight w-full items-center rounded-xl p-6 flex flex-col gap-3"
+  >
+    <slot />
+    <span class="text-[15px] text-center font-bold">{{ text }}</span>
+  </div>
 </template>

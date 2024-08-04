@@ -5,5 +5,10 @@
     <SectionHomeVue />
     <SectionSummaryVue />
     <SectionTopicsVue />
+    <SectionSalaryVue />
+    <SectionModulesVue />
+    <SectionPlansVue />
+    <SectionFaqVue /> 
+    <SectionFooterVue />
   </div>
 </template>

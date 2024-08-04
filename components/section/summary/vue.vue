@@ -3,7 +3,8 @@
     <Heading>
       <template #title>
         Domine Desenvolvimento <span class="text-primary"> FullStack </span> com
-        Nosso E-book Completo
+        Nosso <br />
+        E-book Completo
       </template>
       <template #subtitle>
         Este e-book abrange <strong> desde os fundamentos</strong> de HTML e CSS
@@ -14,5 +15,6 @@
         <strong>carreira de sucesso</strong> no desenvolvimento web.
       </template>
     </Heading>
+    <img src="/book.png" />
   </section>
 </template>
