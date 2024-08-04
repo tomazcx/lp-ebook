@@ -8,30 +8,32 @@
         </p>
       </template>
     </Heading>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 lg:gap-6">
       <SectionSalaryProfession
         profession="Júnior"
         salary="3.882,45"
         time="Iniciante"
       >
-        <div class="bg-accent col-span-2 h-5 w-1/4"></div>
+        <div class="bg-accent col-span-2 h-5 lg:h-10 w-1/4"></div>
       </SectionSalaryProfession>
       <SectionSalaryProfession
         profession="Pleno"
         salary="7.409,37"
         time="2 a 4 anos"
       >
-        <div class="bg-accent col-span-2 h-5 w-2/4"></div>
+        <div class="bg-accent col-span-2 h-5 lg:h-10 w-2/4"></div>
       </SectionSalaryProfession>
       <SectionSalaryProfession
         profession="Sênior"
         salary="14.738,70"
         time="+4 anos"
       >
-        <div class="bg-accent col-span-2 h-5 w-full"></div>
+        <div
+          class="bg-accent col-span-2 h-5 lg:h-10 w-full"
+        ></div>
       </SectionSalaryProfession>
     </div>
-    <span class="font-bold text-[8px]"
+    <span class="font-bold text-[8px] lg:text-base"
       >fonte:
       <a target="_blank" href=" https://pesquisa.codigofonte.com.br/2024">
         https://pesquisa.codigofonte.com.br/2024</a

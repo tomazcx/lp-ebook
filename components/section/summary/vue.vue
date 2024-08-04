@@ -1,9 +1,10 @@
 <template>
-  <section>
-    <Heading>
+  <section class="lg:grid lg:grid-cols-2">
+    <img src="/book.png" width="450"  class="hidden items-center lg:block lg:col-span-1" />
+    <Heading class="lg:col-span-1">
       <template #title>
         Domine Desenvolvimento <span class="text-primary"> FullStack </span> com
-        Nosso <br />
+        Nosso <br class="lg:hidden" />
         E-book Completo
       </template>
       <template #subtitle>
@@ -15,6 +16,6 @@
         <strong>carreira de sucesso</strong> no desenvolvimento web.
       </template>
     </Heading>
-    <img src="/book.png" />
+    <img src="/book.png" class="lg:hidden" /> 
   </section>
 </template>

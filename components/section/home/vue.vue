@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-[48px]">
+  <section class="flex flex-col lg:flex-row gap-[48px] lg:grid lg:grid-cols-2">
     <div class="flex flex-col gap-4">
       <SectionHomeBadge />
       <Heading>
@@ -15,21 +15,18 @@
       </Heading>
     </div>
     <div
-      class="gap-4 bg-backgroundSecondary text-[18px] rounded-lg p-[18px] flex flex-col"
+      class="gap-4 bg-backgroundSecondary text-[18px] lg:text-xl rounded-lg p-[18px] flex flex-col"
     >
       <span>Preço promocional de lançamento: </span>
       <span
         ><span class="text-textSecondary line-through">R$79,99</span> por:
       </span>
-      <span class="text-[56px] font-bold">R$27,90</span>
+      <span class="text-6xl font-bold">R$27,90</span>
 
-      <span class="w-full text-center text-[14px]"
+      <span class="w-full text-center text-sm lg:text-lg"
         >Cartão de crédito, Boleto à vista e Pix</span
       >
-      <a
-        class="py-4 text-center font-extrabold text-xs px-0.5 rounded-lg bg-secondary"
-        >QUERO VIRAR UM PROGRAMADOR AGORA</a
-      >
+      <Cta>QUERO VIRAR UM PROGRAMADOR AGORA</Cta>
     </div>
   </section>
 </template>
