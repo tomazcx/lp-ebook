@@ -14,13 +14,13 @@ const active = ref(false);
       class="flex cursor-pointer flex-col py-8 border-b border-text"
     >
       <div class="flex justify-between items-center">
-        <span class="text-xl font-bold">{{ question }}</span>
+        <span class="text-xl lg:text-2xl font-bold">{{ question }}</span>
         <PhosphorIconControl
           :class="{ 'text-accent': true, 'rotate-180': !active }"
           :size="32"
         />
       </div>
-      <span v-if="active" class="mt-8">{{ answer }}</span>
+      <span v-if="active" class="mt-8 lg:text-lg">{{ answer }}</span>
     </div>
   </div>
 </template>

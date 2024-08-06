@@ -7,7 +7,15 @@ const items = [
     name: "E-book FullStack Completo: Do 0 aos primeiros projetos.",
   },
   {
-    name: "Notion com 100+ materiais úteis",
+    name: "Bots de vagas no Telegram",
+    exclusive: true,
+  },
+  {
+    name: "Modelo de currículo",
+    exclusive: true,
+  },
+  {
+    name: "Galeria de ideias de projetos",
     exclusive: true,
   },
   {
@@ -15,22 +23,18 @@ const items = [
     exclusive: true,
   },
   {
-    name: "Galeria de ideia de projetos",
+    name: "Guia de extensões VsCode",
     exclusive: true,
   },
   {
-    name: "Bots de vagas no Telegram",
-    exclusive: true,
-  },
-  {
-    name: "Bots de vagas no Telegram",
+    name: "Repositórios úteis do GitHub",
     exclusive: true,
   },
 ];
 </script>
 
 <template>
-  <section class="flex flex-col gap-4">
+  <section id="plans" class="flex flex-col gap-4">
     <Heading>
       <template #title>
         <p class="text-center">
@@ -38,16 +42,22 @@ const items = [
         </p>
       </template>
     </Heading>
-    <div class="lg:grid lg:grid-cols-2 gap-6 px-24">
-      <div>
+    <div class="lg:flex-row justify-center flex flex-col gap-6">
+      <div class="lg:h-[640px] lg:max-w-[450px]">
         <div
-          class="flex items-center text-sm font-bold justify-center py-3 bg-secondary"
+          class="flex items-center text-sm lg:text-base font-bold justify-center py-3 bg-secondary"
         >
           <span>DESCONTO DE 60%</span>
         </div>
-        <div class="flex bg-backgroundSecondary px-8 py-5 flex-col gap-3">
-          <SectionPlansBadge text="pacote básico" />
-          <h3 class="text-2xl lg:text-3xl font-bold">FullStack Completo</h3>
+        <div
+          class="flex bg-backgroundSecondary justify-between h-full px-8 py-5 flex-col gap-3"
+        >
+          <div class="space-y-2">
+            <SectionPlansBadge text="pacote básico" />
+            <h3 class="text-2xl lg:text-3xl font-extrabold">
+              FullStack Completo
+            </h3>
+          </div>
           <ul class="flex flex-col gap-1.5 text-xs">
             <SectionPlansItem
               v-for="item in items"
@@ -60,7 +70,7 @@ const items = [
             <div class="flex gap-4 flex-col">
               <div class="flex gap-3">
                 <div
-                  class="flex flex-col whitespace-nowrap font-bold text-xs text-textSecondary"
+                  class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
                 >
                   <span>De: 79,90</span>
                   <span>Por apenas</span>
@@ -73,18 +83,22 @@ const items = [
           </div>
         </div>
       </div>
-      <div>
+      <div class="lg:h-[640px] lg:max-w-[450px]">
         <div
-          class="flex items-center text-sm font-bold justify-center py-3 bg-secondary"
+          class="flex items-center text-sm lg:text-base font-bold justify-center py-3 bg-secondary"
         >
           <span>DESCONTO DE 80%</span>
         </div>
-        <div class="flex bg-backgroundSecondary px-8 py-5 flex-col gap-3">
-          <div class="flex gap-1.5 items-center">
-            <PhosphorIconShieldCheck class="text-accent" :size="32" />
-            <SectionPlansBadge text="melhor custo benefício" />
+        <div
+          class="flex bg-backgroundSecondary justify-between h-full px-8 py-5 flex-col gap-3"
+        >
+          <div class="space-y-2">
+            <div class="flex gap-1.5 items-center">
+              <PhosphorIconShieldCheck class="text-accent" :size="32" />
+              <SectionPlansBadge text="melhor custo benefício" />
+            </div>
+            <h3 class="text-2xl lg:text-3xl font-extrabold">FullStack Pro</h3>
           </div>
-          <h3 class="text-2xl lg:text-3xl font-bold">FullStack Pro</h3>
           <ul class="flex flex-col gap-1.5 text-xs">
             <SectionPlansItem
               v-for="item in items"
@@ -97,12 +111,12 @@ const items = [
             <div class="flex gap-4 flex-col">
               <div class="flex gap-3">
                 <div
-                  class="flex flex-col whitespace-nowrap font-bold text-xs text-textSecondary"
+                  class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
                 >
                   <span>De: R$224,50</span>
                   <span>Por apenas</span>
                 </div>
-                <SectionPlansBadge text="-60% OFF" />
+                <SectionPlansBadge text="-80% OFF" />
               </div>
               <strong class="text-5xl">R$44,90</strong>
             </div>

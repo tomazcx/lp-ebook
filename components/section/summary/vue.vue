@@ -16,6 +16,6 @@
         <strong>carreira de sucesso</strong> no desenvolvimento web.
       </template>
     </Heading>
-    <img src="/book.png" class="lg:hidden" /> 
+    <img src="/book.png" class="lg:hidden mx-auto" /> 
   </section>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-background text-text min-h-screen py-[73px] px-6 lg:py-36 lg:px-44 flex flex-col gap-36"
+    class="text-text min-h-screen py-[73px] px-6 lg:py-36 lg:px-44 flex flex-col gap-36"
   >
     <SectionHomeVue />
     <SectionSummaryVue />
@@ -12,3 +12,13 @@
     <SectionFooterVue />
   </div>
 </template>
+
+<style>
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #13091f;
+}
+</style>

@@ -1,55 +1,55 @@
 <script setup lang="ts">
 const modules = [
   {
-    icon: "html",
+    icon: "html.svg",
     label: "HTML",
   },
   {
-    icon: "css",
+    icon: "css.svg",
     label: "CSS",
   },
   {
-    icon: "js",
+    icon: "js.svg",
     label: "JAVASCRIPT",
   },
   {
-    icon: "git",
+    icon: "git.svg",
     label: "GIT",
   },
   {
-    icon: "bootstrap",
+    icon: "bootstrap.svg",
     label: "BOOTSTRAP",
   },
   {
-    icon: "sql",
+    icon: "sql.svg",
     label: "BANCO DE DADOS",
   },
   {
-    icon: "node",
+    icon: "node.svg",
     label: "NODE.JS",
   },
   {
-    icon: "react",
+    icon: "react.svg",
     label: "REACT",
   },
   {
-    icon: "sc",
+    icon: "sc.png",
     label: "STYLED COMPONENTS",
   },
   {
-    icon: "tailwind",
+    icon: "tailwind.svg",
     label: "TAILWINDCSS",
   },
   {
-    icon: "ts",
+    icon: "ts.svg",
     label: "TYPESCRIPT",
   },
   {
-    icon: "nest",
+    icon: "nest.svg",
     label: "NEST.JS",
   },
   {
-    icon: "docker",
+    icon: "docker.svg",
     label: "DOCKER",
   },
 ];

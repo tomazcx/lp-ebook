@@ -26,7 +26,7 @@
       <span class="w-full text-center text-sm lg:text-lg"
         >Cartão de crédito, Boleto à vista e Pix</span
       >
-      <Cta>QUERO VIRAR UM PROGRAMADOR AGORA</Cta>
+      <Cta href="#plans">QUERO VIRAR UM PROGRAMADOR AGORA</Cta>
     </div>
   </section>
 </template>
