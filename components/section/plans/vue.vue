@@ -31,6 +31,12 @@ const items = [
     exclusive: true,
   },
 ];
+
+const route = useRoute();
+const url = route.fullPath;
+const params = url.split("?")[1];
+const baseUrl = `https://pay.kirvano.com/cc1a111c-f9fa-4590-96ee-35668eea46ef?${params ? params : ''}`
+const proUrl = `https://pay.kirvano.com/7be18de7-3eba-4174-a762-bb05857d12d4?${params ? params: ''}`
 </script>
 
 <template>
@@ -77,7 +83,7 @@ const items = [
               </div>
               <strong class="text-5xl">R$27,90</strong>
             </div>
-            <Cta href="#">EU QUERO</Cta>
+            <Cta :href="baseUrl">EU QUERO</Cta>
           </div>
         </div>
       </div>
@@ -118,7 +124,7 @@ const items = [
               </div>
               <strong class="text-5xl">R$44,90</strong>
             </div>
-            <Cta href="#">APROVEITAR PROMOÇÃO</Cta>
+            <Cta :href="proUrl">APROVEITAR PROMOÇÃO</Cta>
           </div>
         </div>
       </div>
