@@ -24,7 +24,7 @@
       <span class="text-6xl font-bold">R$27,90</span>
 
       <span class="w-full text-center text-sm lg:text-lg"
-        >Cartão de crédito, Boleto à vista e Pix</span
+        >Cartão de crédito, Boleto, Pix, NuPay</span
       >
       <Cta href="#plans">QUERO VIRAR UM PROGRAMADOR AGORA</Cta>
     </div>

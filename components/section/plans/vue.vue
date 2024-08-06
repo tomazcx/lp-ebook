@@ -38,26 +38,24 @@ const items = [
     <Heading>
       <template #title>
         <p class="text-center">
-          Escolha o plano que mais faça sentido pra você
+          Escolha o plano que mais faça sentido para você
         </p>
       </template>
     </Heading>
     <div class="lg:flex-row justify-center flex flex-col gap-6">
-      <div class="lg:h-[640px] lg:max-w-[450px]">
+      <div class="lg:max-w-[450px]">
         <div
-          class="flex items-center text-sm lg:text-base font-bold justify-center py-3 bg-secondary"
+          class="flex items-center text-sm lg:text-base font-bold justify-center py-3 bg-backgroundSecondary border-b border-background"
         >
-          <span>DESCONTO DE 60%</span>
+          <span>PACOTE BÁSICO</span>
         </div>
         <div
           class="flex bg-backgroundSecondary justify-between h-full px-8 py-5 flex-col gap-3"
         >
-          <div class="space-y-2">
-            <SectionPlansBadge text="pacote básico" />
-            <h3 class="text-2xl lg:text-3xl font-extrabold">
-              FullStack Completo
-            </h3>
-          </div>
+          <h3 class="text-2xl lg:text-3xl mt-10 font-extrabold">
+            FullStack Completo
+          </h3>
+
           <ul class="flex flex-col gap-1.5 text-xs">
             <SectionPlansItem
               v-for="item in items"
@@ -83,7 +81,7 @@ const items = [
           </div>
         </div>
       </div>
-      <div class="lg:h-[640px] lg:max-w-[450px]">
+      <div class="lg:max-w-[450px]">
         <div
           class="flex items-center text-sm lg:text-base font-bold justify-center py-3 bg-secondary"
         >
@@ -120,7 +118,7 @@ const items = [
               </div>
               <strong class="text-5xl">R$44,90</strong>
             </div>
-            <Cta href="#">EU QUERO</Cta>
+            <Cta href="#">APROVEITAR PROMOÇÃO</Cta>
           </div>
         </div>
       </div>
