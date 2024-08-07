@@ -10,7 +10,7 @@
       <PhosphorIconCodeBlock class="text-accent" :size="56" />
     </SectionTopicsCard>
     <SectionTopicsCard
-      text="Exercícios para você não fica só na teoria."
+      text="Exercícios para você não ficar só na teoria."
     >
       <PhosphorIconChecks class="text-accent" :size="56" />
     </SectionTopicsCard>
