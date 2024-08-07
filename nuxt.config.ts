@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-phosphor-icons"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-phosphor-icons", "@nuxt/image"],
   tailwindcss: {
     config: {
       theme: {
@@ -18,6 +18,17 @@ export default defineNuxtConfig({
           },
         },
       },
+    },
+  },
+  app: {
+    head: {
+      link: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico",
+        },
+      ],
     },
   },
 });

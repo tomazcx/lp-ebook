@@ -1,6 +1,6 @@
 <template>
   <section class="lg:grid lg:grid-cols-2">
-    <img src="/book.png" width="450"  class="hidden items-center lg:block lg:col-span-1" />
+    <nuxt-img src="/book.png" width="450" format="webp" class="hidden items-center lg:block lg:col-span-1" />
     <Heading class="lg:col-span-1">
       <template #title>
         Domine Desenvolvimento <span class="text-primary"> FullStack </span> com
@@ -16,6 +16,6 @@
         <strong>carreira de sucesso</strong> no desenvolvimento web.
       </template>
     </Heading>
-    <img src="/book.png" class="lg:hidden mx-auto" /> 
+    <nuxt-img src="/book.png" format="webp" class="lg:hidden mx-auto" /> 
   </section>
 </template>
