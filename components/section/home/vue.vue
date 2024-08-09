@@ -1,5 +1,7 @@
 <template>
-  <section class="flex flex-col lg:flex-row gap-[48px] lg:grid lg:grid-cols-2">
+  <section
+    class="flex flex-col lg:flex-row gap-[48px] lg:grid lg:grid-cols-2"
+  >
     <div class="flex flex-col gap-4">
       <SectionHomeBadge />
       <Heading>
@@ -15,12 +17,13 @@
       </Heading>
     </div>
     <div
-      class="gap-4 bg-backgroundSecondary text-[18px] lg:text-xl rounded-lg p-[18px] flex flex-col"
+      class="gap-4 bg-backgroundSecondary relative text-[18px] lg:text-xl rounded-lg p-[18px] flex justify-between flex-col"
     >
       <span>Preço promocional de lançamento: </span>
       <span
         ><span class="text-textSecondary line-through">R$79,99</span> por:
       </span>
+
       <span class="text-6xl font-bold">R$27,90</span>
 
       <span class="w-full text-center text-sm lg:text-lg"

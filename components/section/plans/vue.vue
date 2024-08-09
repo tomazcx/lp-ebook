@@ -76,8 +76,8 @@ const proUrl = `https://pay.kirvano.com/7be18de7-3eba-4174-a762-bb05857d12d4?${p
                 <div
                   class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
                 >
-                  <span>De: 79,90</span>
-                  <span>Por apenas</span>
+                  <span>De: <span class="line-through">R$79,90</span></span>
+                  <span>Por uma vez de apenas</span>
                 </div>
                 <SectionPlansBadge text="-60% OFF" />
               </div>
@@ -117,8 +117,8 @@ const proUrl = `https://pay.kirvano.com/7be18de7-3eba-4174-a762-bb05857d12d4?${p
                 <div
                   class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
                 >
-                  <span>De: R$224,50</span>
-                  <span>Por apenas</span>
+                  <span>De: <span class="line-through">R$224,50 </span></span>
+                  <span>Por uma vez de apenas</span>
                 </div>
                 <SectionPlansBadge text="-80% OFF" />
               </div>
