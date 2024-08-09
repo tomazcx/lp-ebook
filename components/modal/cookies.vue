@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const show = ref(false);
 
+const emit = defineEmits(['accept'])
+
 onMounted(() => {
   const answer = localStorage.getItem("pixel-policy");
 
@@ -12,6 +14,7 @@ onMounted(() => {
 const accept = () => {
   show.value = false;
   localStorage.setItem("pixel-policy", "true")
+  emit('accept')
 };
 
 const decline = () => {
@@ -28,7 +31,7 @@ const decline = () => {
     <span
       >Nós utilizamos o Meta Pixel para coletar informações de navegação e
       ajudar a melhorar nossos serviços. Esta coleta não será usada para
-      personalização de conteúdos. Leia mais sobre nossa <a href="#">Política de Cookies</a>
+      personalização de conteúdos. 
       </span
     >
     <div class="flex items-center lg:gap-4 flex-col lg:flex-row gap-2">

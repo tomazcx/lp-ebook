@@ -2,6 +2,39 @@
 useHead({
   title: "E-book Fullstack Completo",
 });
+
+const { $fbq } = useNuxtApp();
+
+const accepted = ref(false);
+const route = useRoute();
+const url = route.fullPath;
+const params = new URLSearchParams(url.split("?")[1]);
+
+const utmSource = params.get("utm_source");
+const utmMedium = params.get("utm_medium");
+const utmCampaign = params.get("utm_campaign");
+
+onMounted(() => {
+  const pixelPolicy = localStorage.getItem("pixel-policy");
+
+  if (pixelPolicy === "true") {
+    $fbq("track", "PageView", {
+      ...(utmSource && { source: utmSource }),
+      ...(utmMedium && { source: utmMedium }),
+      ...(utmCampaign && { source: utmCampaign }),
+    });
+    accepted.value = true;
+  }
+});
+
+const sendPixelEvent = () => {
+  $fbq("track", "PageView", {
+    ...(utmSource && { source: utmSource }),
+    ...(utmMedium && { source: utmMedium }),
+    ...(utmCampaign && { source: utmCampaign }),
+  });
+  accepted.value = true;
+};
 </script>
 
 <template>
@@ -13,29 +46,12 @@ useHead({
     <SectionTopicsVue />
     <SectionSalaryVue />
     <SectionModulesVue />
-    <SectionPlansVue />
+    <SectionPlansVue :accepted="accepted" />
     <SectionFaqVue />
     <SectionFooterVue />
-    <component is="script">
-      !(function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function
-      () { n.callMethod ? n.callMethod.apply(n, arguments) :
-      n.queue.push(arguments); }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded
-      = !0; n.version = "2.0"; n.queue = []; t = b.createElement(e); t.async =
-      !0; t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s); })( window, document, "script",
-      "https://connect.facebook.net/en_US/fbevents.js", ); fbq("init",
-      "1231855614852528"); fbq("track", "PageView");
-    </component>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=1231855614852528&ev=PageView&noscript=1"
-    /></noscript>
   </div>
   <ClientOnly>
-    <ModalCookies />
+    <ModalCookies @accept="sendPixelEvent" />
   </ClientOnly>
 </template>
 

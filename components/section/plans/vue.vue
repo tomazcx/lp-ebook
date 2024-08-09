@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const props = defineProps<{ accepted: true }>();
+
 const items = [
   {
     name: "Acesso vitalício",
@@ -35,8 +37,30 @@ const items = [
 const route = useRoute();
 const url = route.fullPath;
 const params = url.split("?")[1];
-const baseUrl = `https://pay.kirvano.com/cc1a111c-f9fa-4590-96ee-35668eea46ef?${params ? params : ''}`
-const proUrl = `https://pay.kirvano.com/7be18de7-3eba-4174-a762-bb05857d12d4?${params ? params: ''}`
+
+const baseUrl = ref(
+  "https://pay.kirvano.com/cc1a111c-f9fa-4590-96ee-35668eea46ef?",
+);
+const proUrl = ref(
+  "https://pay.kirvano.com/7be18de7-3eba-4174-a762-bb05857d12d4?",
+);
+
+onMounted(() => {
+  if (props.accepted) {
+    baseUrl.value = baseUrl.value + (params ? params : "");
+    proUrl.value = proUrl.value + (params ? params : "");
+  }
+});
+
+watch(
+  () => props.accepted,
+  () => {
+    if (props.accepted) {
+      baseUrl.value = baseUrl.value + (params ? params : "");
+      proUrl.value = proUrl.value + (params ? params : "");
+    }
+  },
+);
 </script>
 
 <template>

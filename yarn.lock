@@ -900,7 +900,7 @@
   optionalDependencies:
     ipx "^2.1.0"
 
-"@nuxt/kit@3.12.4", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.12.2", "@nuxt/kit@^3.12.3":
+"@nuxt/kit@3.12.4", "@nuxt/kit@^3.11.1", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.12.2", "@nuxt/kit@^3.12.3":
   version "3.12.4"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.12.4.tgz#b7073611d533ac32b504d95664074be3587046b3"
   integrity sha512-aNRD1ylzijY0oYolldNcZJXVyxdGzNTl+Xd0UYyFQCu9f4wqUZqQ9l+b7arCEzchr96pMK0xdpvLcS3xo1wDcw==
@@ -3731,6 +3731,11 @@ merge2@^1.3.0:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
+meta-pixel@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/meta-pixel/-/meta-pixel-1.1.0.tgz#9aa31a917f7a25aa02dd541d0d5429032a93a838"
+  integrity sha512-HvJpqad0uExXFZLKR5TYZ7aHjP/aZ10h/EXvTovUd3cBevSsotTsUZiMj8AhXcu5EeMV28thvBFvYu//78mrcw==
+
 methods@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
@@ -4093,6 +4098,16 @@ nuxi@^3.12.0:
   integrity sha512-6vRdiXTw9SajEQOUi6Ze/XaIXzy1q/sD5UqHQSv3yqTu7Pot5S7fEihNXV8LpcgLz+9HzjVt70r7jYe7R99c2w==
   optionalDependencies:
     fsevents "~2.3.3"
+
+nuxt-meta-pixel@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/nuxt-meta-pixel/-/nuxt-meta-pixel-2.0.2.tgz#655533d2d410a0ea79bc6c72ffd8538f30ac6d71"
+  integrity sha512-3tCB0uEfhVwfyiwaBp09mgKbT2U+oVGTRtKxaOPL3QQqEhO2l2RTT8uzVObSt9rg4/B+3v/vg2S2I9Ru1RL44Q==
+  dependencies:
+    "@nuxt/kit" "^3.11.1"
+    defu "^6.1.4"
+    meta-pixel "^1.1.0"
+    minimatch "^9.0.4"
 
 nuxt-phosphor-icons@^1.3.0:
   version "1.3.0"

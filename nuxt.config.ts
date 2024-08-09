@@ -2,7 +2,19 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-phosphor-icons", "@nuxt/image"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-phosphor-icons",
+    "@nuxt/image",
+    "nuxt-meta-pixel",
+  ],
+  runtimeConfig: {
+    public: {
+      metapixel: {
+         default: {id: '1231855614852528', pageView: '#'}
+      },
+    },
+  },
   tailwindcss: {
     config: {
       theme: {
