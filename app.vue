@@ -20,8 +20,8 @@ onMounted(() => {
   if (pixelPolicy === "true") {
     $fbq("track", "PageView", {
       ...(utmSource && { source: utmSource }),
-      ...(utmMedium && { source: utmMedium }),
-      ...(utmCampaign && { source: utmCampaign }),
+      ...(utmMedium && { medium: utmMedium }),
+      ...(utmCampaign && { campaign: utmCampaign }),
     });
     accepted.value = true;
   }
