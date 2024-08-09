@@ -27,6 +27,8 @@ export default defineNuxtConfig({
             accent: "#761FE7",
             backgroundSecondary: "#251737",
             textSecondary: "#ADA9B1",
+	    cta: "#609719",
+	    ctaSecondary: "#82d419"
           },
         },
       },
