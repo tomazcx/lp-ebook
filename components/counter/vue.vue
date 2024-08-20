@@ -6,7 +6,7 @@ export default {
     const hours = ref("00");
     const minutes = ref("00");
     const seconds = ref("00");
-    const endDate = new Date("2024-08-21T16:00:00").getTime();
+    const endDate = new Date("2024-08-21T13:50:00").getTime();
     let timer = null;
 
     const startCountdown = () => {
