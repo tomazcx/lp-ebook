@@ -26,7 +26,7 @@ const decline = () => {
 <template>
   <div
     v-if="show"
-    class="bg-backgroundSecondary w-11/12 fixed bottom-12 left-1/2 -translate-x-1/2 lg:gap-24 text-sm lg:text-base flex-col lg:flex-row shadow-lg rounded-lg border border-accent text-text py-2 px-4 gap-4 flex justify-between"
+    class="bg-backgroundSecondary z-50 w-11/12 fixed bottom-12 left-1/2 -translate-x-1/2 lg:gap-24 text-sm lg:text-base flex-col lg:flex-row shadow-lg rounded-lg border border-accent text-text py-2 px-4 gap-4 flex justify-between"
   >
     <span
       >Nós utilizamos o Meta Pixel para coletar informações de navegação e
