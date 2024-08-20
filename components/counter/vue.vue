@@ -67,6 +67,7 @@ export default {
     </div>
 
     <a
+	    href="#plans"
       class="rounded-lg hidden lg:block py-2 px-8 bg-cta hover:bg-ctaSecondary text-base lg:text-xl font-bold"
       >Aproveitar agora</a
     >
