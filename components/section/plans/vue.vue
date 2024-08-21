@@ -96,16 +96,17 @@ watch(
           </ul>
           <div class="flex flex-col gap-5 mt-5 mb-8">
             <div class="flex gap-4 flex-col">
-              <div class="flex gap-3">
-                <div
-                  class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
-                >
-                  <span>De: <span class="line-through">R$79,90</span></span>
-                  <span>Por uma vez de apenas</span>
-                </div>
-                <SectionPlansBadge text="-60% OFF" />
+              <div
+                class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
+              >
+                <span>Por 4x de apenas</span>
               </div>
-              <strong class="text-5xl">R$27,90</strong>
+              <strong class="text-5xl">R$10,90</strong>
+              <div
+                class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
+              >
+                <span>ou R$40,90 à vista</span>
+              </div>
             </div>
             <Cta :href="baseUrl">EU QUERO</Cta>
           </div>
@@ -136,17 +137,18 @@ watch(
             />
           </ul>
           <div class="flex flex-col gap-5 mt-5 mb-8">
-            <div class="flex gap-4 flex-col">
-              <div class="flex gap-3">
-                <div
-                  class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
-                >
-                  <span>De: <span class="line-through">R$224,50 </span></span>
-                  <span>Por uma vez de apenas</span>
-                </div>
-                <SectionPlansBadge text="-80% OFF" />
+            <div class="flex gap-2 flex-col">
+              <div
+                class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
+              >
+                <span>Por 4x de apenas</span>
               </div>
-              <strong class="text-5xl">R$44,90</strong>
+              <strong class="text-5xl">R$10,90</strong>
+              <div
+                class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
+              >
+                <span>ou R$40,90 à vista</span>
+              </div>
             </div>
             <Cta :href="proUrl">APROVEITAR PROMOÇÃO</Cta>
           </div>
