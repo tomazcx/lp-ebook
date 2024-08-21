@@ -99,13 +99,13 @@ watch(
               <div
                 class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
               >
-                <span>Por 4x de apenas</span>
+                <span>Por 5x de apenas</span>
               </div>
-              <strong class="text-5xl">R$10,90</strong>
+              <strong class="text-5xl">R$7,58</strong>
               <div
                 class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
               >
-                <span>ou R$40,90 à vista</span>
+                <span>ou R$37,90 à vista</span>
               </div>
             </div>
             <Cta :href="baseUrl">EU QUERO</Cta>
@@ -141,13 +141,13 @@ watch(
               <div
                 class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
               >
-                <span>Por 4x de apenas</span>
+                <span>Por 5x de apenas</span>
               </div>
-              <strong class="text-5xl">R$10,90</strong>
+              <strong class="text-5xl">R$11,58</strong>
               <div
                 class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
               >
-                <span>ou R$40,90 à vista</span>
+                <span>ou R$57,90 à vista</span>
               </div>
             </div>
             <Cta :href="proUrl">APROVEITAR PROMOÇÃO</Cta>

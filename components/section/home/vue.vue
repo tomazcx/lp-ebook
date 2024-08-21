@@ -24,9 +24,9 @@
     >
       <span>💸 Adquira agora por apenas: </span>
       <div class="flex flex-col gap-2">
-        <span class="text-textSecondary"> 4 vezes de </span>
-        <span class="text-6xl font-bold">R$7,90</span>
-        <span class="text-textSecondary">ou R$31,90 a vista</span>
+        <span class="text-textSecondary">Por apenas 5x de </span>
+        <span class="text-6xl font-bold">R$7,58</span>
+        <span class="text-textSecondary">ou R$37,90 a vista</span>
       </div>
 
       <span class="w-full text-center text-sm lg:text-lg"
