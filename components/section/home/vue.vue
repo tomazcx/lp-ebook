@@ -24,19 +24,20 @@
     >
       <span>💸 Adquira agora por apenas: </span>
       <div class="flex flex-col gap-2">
-        <span class="text-textSecondary">Por apenas </span>
-        <span class="text-6xl font-bold">R$ 37,90</span>
-        <span class="text-textSecondary">ou 5x de R$ 7,58</span>
+        <span class="text-textSecondary"
+          >De <span class="line-through">R$37,90</span> por apenas</span
+        >
+        <span class="text-6xl font-bold">R$ 18,95</span>
       </div>
 
       <span class="w-full text-center text-sm lg:text-lg"
-        >Cartão de crédito, Boleto, Pix e NuPay</span
+        >Cartão de crédito, Boleto e Pix</span
       >
       <Cta
         href="#plans"
         class="relative overflow-hidden flex items-center justify-center"
       >
-        <span class="relative z-10">QUERO VIRAR UM PROGRAMADOR</span>
+        <span class="relative z-10">COMPRAR COM DESCONTO</span>
         <svg
           class="ml-2 w-6 h-6 relative z-10 transform transition-transform group-hover:translate-x-1"
           xmlns="http://www.w3.org/2000/svg"

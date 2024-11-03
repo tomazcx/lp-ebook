@@ -3,9 +3,9 @@
     <img src="/book.png" width="700" class="hidden items-center lg:block lg:col-span-1" />
     <Heading class="lg:col-span-1">
       <template #title>
-        Domine Desenvolvimento <span class="text-primary"> FullStack </span> com
-        Nosso <br class="lg:hidden" />
-        E-book Completo
+        Domine desenvolvimento <span class="text-primary"> FullStack </span> com
+        nosso <br class="lg:hidden" />
+        e-book completo
       </template>
       <template #subtitle>
         Este e-book abrange <strong> desde os fundamentos</strong> de HTML e CSS

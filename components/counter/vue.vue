@@ -42,24 +42,29 @@ onUnmounted(() => {
 
 <template>
   <header
-    class="z-50 flex lg:justify-center shadow-lg bg-backgroundSecondary left-1/2 -translate-x-1/2 items-center w-full lg:gap-12 gap-4 fixed top-0 py-2 px-12"
+    class="z-50 flex justify-center shadow-lg bg-backgroundSecondary left-1/2 -translate-x-1/2 items-center w-full lg:gap-12 gap-4 fixed top-0 py-4 px-4"
   >
-    <div class="hidden lg:block">
+    <!--    <div class="hidden lg:block">
       <CounterTimer :hours :minutes :seconds />
+    </div> -->
+
+    <div class="font-bold text-sm lg:text-xl text-center">
+      <span class="bg-secondary rounded px-4 py-0.5 mr-1">50%</span> de desconto
+      <span class="inline lg:hidden"><span class="text-xl">·</span> PROMOÇÃO BLACK NOVEMBER</span>
     </div>
 
-    <h1 class="font-bold text-xs lg:text-xl text-center">
-      Aproveite as últimas horas da promoção de lançamento!
+    <h1 class="font-bold hidden lg:block text-xs lg:text-xl text-center">
+      APROVEITE A PROMOÇÃO BLACK NOVEMBER
     </h1>
 
-    <div class="block lg:hidden">
+    <!--    <div class="block lg:hidden">
       <CounterTimer :hours :minutes :seconds />
-    </div>
+    </div> -->
 
     <a
       href="#plans"
       class="rounded-lg hidden lg:block py-2 px-8 bg-cta hover:bg-ctaSecondary text-base lg:text-xl font-bold"
-      >Aproveitar agora</a
+      >Comprar com desconto</a
     >
   </header>
 </template>
