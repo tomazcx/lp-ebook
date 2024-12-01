@@ -96,14 +96,13 @@ watch(
           </ul>
           <div class="flex flex-col gap-5 mt-5 mb-8">
             <div class="flex gap-2 flex-col">
-              <div
-                class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
+              <span class="font-bold text-xs lg:text-base text-textSecondary"
+                >Por apenas</span
               >
-                <span
-                  >De <span class="line-through">R$37,90</span> por apenas</span
-                >
-              </div>
-              <strong class="text-5xl">R$18,95</strong>
+              <strong class="text-5xl">R$37,90</strong>
+              <span class="font-bold text-xs lg:text-base text-textSecondary"
+                >ou 5x de R$7,58</span
+              >
             </div>
             <Cta :href="baseUrl">EU QUERO</Cta>
           </div>
@@ -113,7 +112,7 @@ watch(
         <div
           class="flex items-center text-sm lg:text-base font-bold justify-center py-3 bg-secondary"
         >
-          <span>DESCONTO DE 80%</span>
+          <span>PACOTE PRO</span>
         </div>
         <div
           class="flex bg-backgroundSecondary justify-between h-full px-8 py-5 flex-col gap-3"
@@ -135,16 +134,15 @@ watch(
           </ul>
           <div class="flex flex-col gap-5 mt-5 mb-8">
             <div class="flex gap-2 flex-col">
-              <div
-                class="flex flex-col whitespace-nowrap font-bold text-xs lg:text-base text-textSecondary"
+              <span class="font-bold text-xs lg:text-base text-textSecondary"
+                >Por apenas</span
               >
-                <span
-                  >De <span class="line-through">R$57,90</span> por apenas</span
-                >
-              </div>
-              <strong class="text-5xl">R$37,90</strong>
+              <strong class="text-5xl">R$57,90</strong>
+              <span class="font-bold text-xs lg:text-base text-textSecondary"
+                >ou 5x de R$11,58</span
+              >
             </div>
-            <Cta :href="proUrl">APROVEITAR PROMOÇÃO</Cta>
+            <Cta :href="proUrl">EU QUERO</Cta>
           </div>
         </div>
       </div>
