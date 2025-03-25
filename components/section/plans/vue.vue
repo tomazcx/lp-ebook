@@ -39,10 +39,10 @@ const url = route.fullPath;
 const params = url.split("?")[1];
 
 const baseUrl = ref(
-  "https://pay.kirvano.com/cc1a111c-f9fa-4590-96ee-35668eea46ef?",
+  "https://pay.kirvano.com/cc1a111c-f9fa-4590-96ee-35668eea46ef?"
 );
 const proUrl = ref(
-  "https://pay.kirvano.com/7be18de7-3eba-4174-a762-bb05857d12d4?",
+  "https://pay.kirvano.com/7be18de7-3eba-4174-a762-bb05857d12d4?"
 );
 
 onMounted(() => {
@@ -59,7 +59,7 @@ watch(
       baseUrl.value = baseUrl.value + (params ? params : "");
       proUrl.value = proUrl.value + (params ? params : "");
     }
-  },
+  }
 );
 </script>
 

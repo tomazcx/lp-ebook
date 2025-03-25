@@ -1,6 +1,35 @@
 <script setup lang="ts">
 useHead({
-  title: "E-book Fullstack Completo",
+  title:
+    "E-book Fullstack Completo: Aprenda a programar do zero e construa seus primeiros projetos",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Descubra como sair do zero e se tornar um programador fullstack com o método que me colocou no mercado. E-book de programação completo e direto ao ponto.",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    },
+    {
+      property: "og:title",
+      content: "E-book Fullstack Completo: Aprenda a programar do zero",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transforme sua carreira com o e-book que te mostra o caminho completo para se tornar fullstack.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://ebook.umporcentoprogramador.com.br",
+    },
+  ],
 });
 
 const { $fbq } = useNuxtApp();
@@ -41,7 +70,7 @@ const sendPixelEvent = () => {
   <div
     class="text-text min-h-screen overflow-x-hidden py-[73px] px-6 lg:py-36 lg:px-44 flex flex-col gap-36"
   >
-<!--    <CounterVue /> -->
+    <!--    <CounterVue /> -->
     <SectionHomeVue />
     <SectionSummaryVue />
     <SectionTopicsVue />
