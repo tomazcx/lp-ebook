@@ -53,7 +53,10 @@ watch(
 </script>
 
 <template>
-  <section id="plans" class="relative min-h-screen flex items-center py-20">
+  <section
+    id="plans"
+    class="relative min-h-screen flex items-center py-12 lg:py-20 overflow-hidden"
+  >
     <!-- Background futurístico com grid -->
     <div class="absolute inset-0 overflow-hidden opacity-5">
       <!-- Grid technology pattern -->
@@ -65,41 +68,41 @@ watch(
               transparent 1px
             ),
             linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
-          background-size: 40px 40px;
+          background-size: 30px 30px;
         "
       ></div>
 
-      <!-- Floating code elements -->
+      <!-- Floating code elements - ajustados para mobile -->
       <div
-        class="absolute top-20 left-10 font-mono text-blue-400/20 text-sm animate-pulse"
+        class="absolute top-16 left-2 lg:left-10 font-mono text-blue-400/20 text-xs lg:text-sm animate-pulse"
       >
         const dev = 'you';
       </div>
       <div
-        class="absolute top-40 right-16 font-mono text-emerald-400/20 text-sm animate-pulse delay-300"
+        class="absolute top-32 right-2 lg:right-16 font-mono text-emerald-400/20 text-xs lg:text-sm animate-pulse delay-300"
       >
         function success() { return true; }
       </div>
       <div
-        class="absolute bottom-32 left-20 font-mono text-purple-400/20 text-sm animate-pulse delay-700"
+        class="absolute bottom-24 left-2 lg:left-20 font-mono text-purple-400/20 text-xs lg:text-sm animate-pulse delay-700"
       >
         // unlock potential
       </div>
       <div
-        class="absolute bottom-60 right-32 font-mono text-orange-400/20 text-sm animate-pulse delay-500"
+        class="absolute bottom-40 right-2 lg:right-32 font-mono text-orange-400/20 text-xs lg:text-sm animate-pulse delay-500"
       >
         npm install career-boost
       </div>
 
-      <!-- Geometric tech elements -->
+      <!-- Geometric tech elements - reduzidos no mobile -->
       <div
-        class="absolute top-1/4 left-8 w-24 h-24 border border-blue-500/20 rotate-45 animate-spin-slow"
+        class="absolute top-1/4 left-1 lg:left-8 w-12 h-12 lg:w-24 lg:h-24 border border-blue-500/20 rotate-45 animate-spin-slow"
       ></div>
       <div
-        class="absolute bottom-1/4 right-8 w-32 h-32 border border-emerald-500/20 rounded-full animate-pulse"
+        class="absolute bottom-1/4 right-1 lg:right-8 w-16 h-16 lg:w-32 lg:h-32 border border-emerald-500/20 rounded-full animate-pulse"
       ></div>
       <div
-        class="absolute top-1/2 right-1/4 w-16 h-16 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rotate-12 animate-float"
+        class="absolute top-1/2 right-1/4 w-8 h-8 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rotate-12 animate-float"
       ></div>
     </div>
 
@@ -119,12 +122,12 @@ watch(
       ></div>
     </div>
 
-    <div class="container mx-auto px-4 relative z-10">
+    <div class="w-full max-w-7xl mx-auto px-3 lg:px-6 relative z-10">
       <!-- Header section with enhanced typography -->
-      <div class="text-center mb-16 animate-fade-in-up">
+      <div class="text-center mb-10 lg:mb-16 animate-fade-in-up">
         <Heading>
           <template #title>
-            <h2 class="text-center mb-4 relative">
+            <h2 class="text-center mb-4 relative px-2">
               <span
                 class="bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent"
               >
@@ -134,7 +137,9 @@ watch(
           </template>
         </Heading>
 
-        <p class="text-textSecondary max-w-2xl mx-auto text-lg leading-relaxed">
+        <p
+          class="text-textSecondary max-w-2xl mx-auto text-base lg:text-lg leading-relaxed px-4"
+        >
           Transforme sua carreira com o pacote completo para se tornar um
           desenvolvedor FullStack profissional
         </p>
@@ -143,13 +148,13 @@ watch(
       <!-- Main plan card with enhanced design -->
       <div class="flex justify-center">
         <div
-          class="lg:max-w-[480px] w-full max-w-md transform hover:scale-105 transition-all duration-500 animate-fade-in-up delay-200"
+          class="w-full max-w-sm lg:max-w-[480px] transform lg:hover:scale-105 transition-all duration-500 animate-fade-in-up delay-200"
         >
           <!-- Glow effect container -->
           <div class="relative group">
             <!-- Outer glow -->
             <div
-              class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500 animate-glow"
+              class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 rounded-2xl blur opacity-30 lg:group-hover:opacity-50 transition duration-500 animate-glow"
             ></div>
 
             <!-- Card container -->
@@ -172,52 +177,59 @@ watch(
                       rgba(255, 255, 255, 0.3) 1px,
                       transparent 0
                     );
-                    background-size: 20px 20px;
+                    background-size: 15px 15px;
                   "
                 ></div>
 
-                <div class="relative z-10 text-center py-6 px-8">
+                <div
+                  class="relative z-10 text-center py-4 lg:py-6 px-4 lg:px-8"
+                >
                   <div class="inline-flex items-center gap-2 mb-3">
                     <div
                       class="w-2 h-2 bg-white rounded-full animate-pulse"
                     ></div>
-                    <span class="text-white font-mono text-sm tracking-widest"
+                    <span
+                      class="text-white font-mono text-xs lg:text-sm tracking-widest"
                       >PACOTE</span
                     >
                     <div
                       class="w-2 h-2 bg-white rounded-full animate-pulse"
                     ></div>
                   </div>
-                  <h3 class="text-white text-2xl font-bold tracking-wide">
+                  <h3
+                    class="text-white text-xl lg:text-2xl font-bold tracking-wide"
+                  >
                     FULLSTACK PRO
                   </h3>
-                  <div class="w-16 h-0.5 bg-white/50 mx-auto mt-2"></div>
+                  <div
+                    class="w-12 lg:w-16 h-0.5 bg-white/50 mx-auto mt-2"
+                  ></div>
                 </div>
               </div>
 
               <!-- Body content -->
-              <div class="p-8 space-y-8">
+              <div class="p-4 lg:p-8 space-y-6 lg:space-y-8">
                 <!-- Product header with enhanced badge -->
-                <div class="space-y-4">
-                  <div class="flex gap-3 items-start">
-                    <div class="relative">
+                <div class="space-y-3 lg:space-y-4">
+                  <div class="flex gap-2 lg:gap-3 items-start">
+                    <div class="relative flex-shrink-0">
                       <div
                         class="absolute inset-0 bg-emerald-400/20 rounded-full blur-md animate-pulse"
                       ></div>
                       <PhosphorIconShieldCheck
                         class="text-emerald-400 relative z-10 drop-shadow-lg"
-                        :size="40"
+                        :size="32"
                       />
                     </div>
-                    <div class="flex-1">
+                    <div class="flex-1 min-w-0">
                       <SectionPlansBadge text="melhor custo benefício" />
                       <div class="mt-2">
                         <h4
-                          class="text-xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text"
+                          class="text-lg lg:text-xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text"
                         >
                           Sua jornada FullStack completa
                         </h4>
-                        <p class="text-textSecondary text-sm mt-1">
+                        <p class="text-textSecondary text-xs lg:text-sm mt-1">
                           Tudo que você precisa em um só lugar
                         </p>
                       </div>
@@ -227,13 +239,15 @@ watch(
 
                 <!-- Enhanced benefits list -->
                 <div class="space-y-3">
-                  <h5 class="font-semibold text-lg flex items-center gap-2">
+                  <h5
+                    class="font-semibold text-base lg:text-lg flex items-center gap-2"
+                  >
                     <div
-                      class="w-1 h-6 bg-gradient-to-b from-blue-400 to-emerald-400 rounded-full"
+                      class="w-1 h-5 lg:h-6 bg-gradient-to-b from-blue-400 to-emerald-400 rounded-full"
                     ></div>
                     O que você vai receber:
                   </h5>
-                  <ul class="space-y-2">
+                  <ul class="space-y-1 lg:space-y-2">
                     <SectionPlansItem
                       v-for="(item, index) in items"
                       :key="'key-' + item.name"
@@ -248,18 +262,25 @@ watch(
                 <div class="relative">
                   <!-- Background accent -->
                   <div
-                    class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-xl -m-4"
+                    class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-xl -m-2 lg:-m-4"
                   ></div>
 
-                  <div class="relative z-10 text-center space-y-6 py-6">
+                  <div
+                    class="relative z-10 text-center space-y-4 lg:space-y-6 py-4 lg:py-6"
+                  >
                     <!-- Price display -->
                     <div class="space-y-2">
-                      <p class="text-textSecondary font-medium">
+                      <p
+                        class="text-textSecondary font-medium text-sm lg:text-base"
+                      >
                         💳 Investimento inteligente
                       </p>
 
-                      <div class="flex items-center justify-center gap-3">
-                        <span class="text-textSecondary line-through text-xl"
+                      <div
+                        class="flex items-center justify-center gap-2 lg:gap-3"
+                      >
+                        <span
+                          class="text-textSecondary line-through text-lg lg:text-xl"
                           >R$97,90</span
                         >
                         <div
@@ -270,12 +291,12 @@ watch(
                       </div>
 
                       <div
-                        class="text-5xl lg:text-6xl font-black bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent"
+                        class="text-4xl lg:text-5xl xl:text-6xl font-black bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent"
                       >
                         R$37,90
                       </div>
 
-                      <p class="text-textSecondary">
+                      <p class="text-textSecondary text-sm lg:text-base">
                         ou
                         <span class="text-white font-semibold"
                           >5x de R$7,58</span
@@ -284,55 +305,58 @@ watch(
                       </p>
 
                       <div
-                        class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-2 mt-3"
+                        class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-3 lg:px-4 py-1.5 lg:py-2 mt-3"
                       >
                         <div
                           class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"
                         ></div>
-                        <span class="text-emerald-400 text-sm font-medium"
+                        <span
+                          class="text-emerald-400 text-xs lg:text-sm font-medium"
                           >Preço promocional</span
                         >
                       </div>
                     </div>
 
                     <!-- Enhanced CTA -->
-                    <div class="space-y-4">
+                    <div class="space-y-3 lg:space-y-4">
                       <div class="relative group">
                         <div
-                          class="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-xl blur opacity-70 group-hover:opacity-100 transition duration-300 animate-pulse"
+                          class="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-xl blur opacity-70 lg:group-hover:opacity-100 transition duration-300 animate-pulse"
                         ></div>
                         <Cta
                           :href="proUrl"
-                          class="relative block bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-400 hover:to-blue-400 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                          class="relative block bg-gradient-to-r from-emerald-500 to-blue-500 lg:hover:from-emerald-400 lg:hover:to-blue-400 text-white font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-xl transition-all duration-300 transform lg:hover:scale-105 shadow-2xl"
                         >
-                          <span class="flex items-center justify-center gap-3">
-                            <PhosphorIconRocket :size="24" />
+                          <span
+                            class="flex items-center justify-center gap-2 lg:gap-3 text-sm lg:text-base"
+                          >
+                            <PhosphorIconRocket :size="20" />
                             QUERO COMEÇAR AGORA
-                            <PhosphorIconArrowRight :size="20" />
+                            <PhosphorIconArrowRight :size="18" />
                           </span>
                         </Cta>
                       </div>
 
                       <div
-                        class="flex items-center justify-center gap-6 text-sm text-textSecondary"
+                        class="flex items-center justify-center gap-4 lg:gap-6 text-xs lg:text-sm text-textSecondary"
                       >
-                        <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-1 lg:gap-2">
                           <PhosphorIconShield
-                            :size="16"
+                            :size="14"
                             class="text-emerald-400"
                           />
                           <span>Acesso imediato</span>
                         </div>
-                        <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-1 lg:gap-2">
                           <PhosphorIconInfinity
-                            :size="16"
+                            :size="14"
                             class="text-blue-400"
                           />
                           <span>Vitalício</span>
                         </div>
                       </div>
 
-                      <p class="text-xs text-textSecondary/70">
+                      <p class="text-xs text-textSecondary/70 px-2">
                         🔒 Pagamento 100% seguro • Satisfação garantida
                       </p>
                     </div>
