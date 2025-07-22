@@ -4,7 +4,9 @@
       <slot name="title" />
     </h2>
 
-    <p class="text-base lg:text-lg leading-relaxed text-text/90 max-w-4xl">
+    <p
+      class="text-base lg:text-lg leading-relaxed text-text/90 max-w-4xl mx-auto"
+    >
       <slot name="subtitle" />
     </p>
   </div>
