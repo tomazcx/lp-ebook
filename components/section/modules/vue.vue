@@ -56,21 +56,43 @@ const modules = [
 </script>
 
 <template>
-  <section class="flex flex-col gap-8">
-    <Heading>
-      <template #title>
-        <p class="text-center">O que vou aprender?</p>
-      </template>
-      <template #subtitle>
-        <p class="text-center">
-          Confira a seguir uma lista de todas as
-          <strong>tecnologias </strong>abordadas ao longo dos capítulos do
-          e-book:
-        </p>
-      </template>
-    </Heading>
-    <SectionModulesModuleList v-slot="data" :modules="modules">
-      <SectionModulesModule :icon="data.icon" :label="data.label" />
-    </SectionModulesModuleList>
+  <section class="flex flex-col gap-12 relative">
+    <!-- Background tecnológico -->
+    <div class="absolute inset-0 overflow-hidden opacity-5">
+      <div
+        class="absolute top-10 left-20 w-40 h-40 border border-primary rounded-lg rotate-12"
+      ></div>
+      <div
+        class="absolute bottom-20 right-10 w-32 h-32 border-2 border-accent rounded-full"
+      ></div>
+      <div class="absolute top-1/3 right-1/4 text-primary font-mono text-sm">
+        import { skills } from './fullstack';<br />
+        export default skills;
+      </div>
+      <div class="absolute bottom-1/3 left-1/4 text-accent font-mono text-sm">
+        const stack = ['frontend', 'backend'];
+      </div>
+    </div>
+
+    <div class="relative z-10">
+      <Heading>
+        <template #title>
+          <h2 class="text-center">O que vou aprender?</h2>
+        </template>
+        <template #subtitle>
+          <p class="text-center">
+            Confira a seguir uma lista de todas as
+            <strong class="text-primary">tecnologias</strong> abordadas ao longo
+            dos capítulos do e-book:
+          </p>
+        </template>
+      </Heading>
+    </div>
+
+    <div class="relative z-10">
+      <SectionModulesModuleList v-slot="data" :modules="modules">
+        <SectionModulesModule :icon="data.icon" :label="data.label" />
+      </SectionModulesModuleList>
+    </div>
   </section>
 </template>

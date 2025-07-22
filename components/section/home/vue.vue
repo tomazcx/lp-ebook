@@ -1,23 +1,47 @@
 <template>
   <section
-    class="flex flex-col lg:flex-row gap-[48px] lg:grid lg:grid-cols-2"
+    class="relative flex flex-col lg:flex-row gap-12 lg:gap-16 lg:grid lg:grid-cols-2 items-center"
     aria-labelledby="main-title"
   >
-    <div class="flex flex-col gap-4">
+    <!-- Background decorativo tecnológico -->
+    <div class="absolute inset-0 overflow-hidden opacity-10">
+      <div
+        class="absolute top-10 left-10 w-32 h-32 border border-primary/20 rounded-lg rotate-12"
+      ></div>
+      <div
+        class="absolute bottom-20 right-10 w-24 h-24 border border-accent/20 rounded-lg -rotate-12"
+      ></div>
+      <div class="absolute top-1/2 left-1/4 text-primary/10 font-mono text-xs">
+        function() {<br />
+        &nbsp;&nbsp;return success;<br />
+        }
+      </div>
+      <div
+        class="absolute bottom-1/4 right-1/4 text-accent/10 font-mono text-xs"
+      >
+        &lt;dev/&gt;
+      </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="flex flex-col gap-8 relative z-10">
       <SectionHomeBadge />
 
       <Heading>
         <template #title>
-          <h1 id="main-title" class="text-3xl font-bold leading-tight">
+          <h1
+            id="main-title"
+            class="text-3xl lg:text-4xl font-bold leading-tight"
+          >
             Aprenda tudo que você precisa para virar um
-            <span class="text-primary animated-text">
+            <span class="text-primary">
               programador fullstack começando do absoluto 0
             </span>
           </h1>
         </template>
 
         <template #subtitle>
-          <p class="text-lg mt-2">
+          <p class="text-lg lg:text-xl mt-4 leading-relaxed">
             Este é o segredo que vai colocar você à frente da concorrência: aqui
             você aprenderá todas as habilidades e tecnologias necessárias para
             se tornar um programador profissional, conquistando
@@ -27,70 +51,112 @@
           </p>
         </template>
       </Heading>
+
+      <!-- Indicadores de benefícios -->
+      <div class="flex flex-wrap gap-4 mt-4">
+        <div class="flex items-center gap-2 text-sm lg:text-base text-text/80">
+          <div class="w-2 h-2 bg-cta rounded-full animate-pulse"></div>
+          <span>14 módulos completos</span>
+        </div>
+        <div class="flex items-center gap-2 text-sm lg:text-base text-text/80">
+          <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+          <span>Projetos práticos</span>
+        </div>
+        <div class="flex items-center gap-2 text-sm lg:text-base text-text/80">
+          <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+          <span>Acesso vitalício</span>
+        </div>
+      </div>
     </div>
 
+    <!-- Card de preço modernizado -->
     <div
-      class="gap-4 bg-backgroundSecondary relative text-[18px] lg:text-xl rounded-lg p-[18px] flex justify-between flex-col"
+      class="relative gap-6 bg-gradient-to-br from-backgroundSecondary/80 to-backgroundSecondary/60 backdrop-blur-sm border border-primary/20 text-lg lg:text-xl rounded-2xl p-8 flex justify-between flex-col shadow-2xl shadow-primary/10 group hover:shadow-primary/20 transition-all duration-500"
     >
-      <p aria-label="Preço atual do e-book">💸 Adquira agora por apenas:</p>
+      <!-- Efeito de brilho no card -->
+      <div
+        class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+      ></div>
 
-      <div class="flex flex-col gap-2">
-        <span class="text-textSecondary">Por apenas</span>
-        <strong class="text-6xl font-bold">R$ 37,90</strong>
-        <span class="text-textSecondary">ou 5x de R$ 7,58</span>
+      <!-- Decoração tecnológica no card -->
+
+      <div class="absolute bottom-4 left-4 text-accent/20 font-mono text-xs">
+        &lt;buy/&gt;
       </div>
 
-      <span class="w-full text-center text-sm lg:text-lg">
-        Cartão de crédito, Boleto e Pix
-      </span>
-
-      <Cta
-        href="#plans"
-        class="relative overflow-hidden flex items-center justify-center group"
-        aria-label="Comprar agora o e-book Fullstack Completo"
-      >
-        <span class="relative z-10">COMPRAR AGORA</span>
-        <svg
-          class="ml-2 w-6 h-6 relative z-10 transform transition-transform group-hover:translate-x-1"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-hidden="true"
+      <div class="relative z-10">
+        <p
+          aria-label="Preço atual do e-book"
+          class="text-base lg:text-lg font-bold flex items-center gap-2"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-        <div class="absolute inset-0"></div>
+          <span>💸</span>
+          <span class="text-cta"> Adquira agora por apenas: </span>
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-3 relative z-10">
+        <span class="text-textSecondary text-base">Por apenas</span>
+        <strong class="text-5xl lg:text-6xl font-bold text-cta">
+          R$ 37,90
+        </strong>
+        <span class="text-textSecondary text-lg">ou 5x de R$ 7,58</span>
+      </div>
+
+      <!-- Badges de pagamento -->
+      <div class="flex flex-wrap gap-2 justify-center relative z-10">
+        <span
+          class="px-3 py-1 bg-backgroundSecondary/80 border border-primary/20 rounded-full text-sm font-medium"
+        >
+          💳 Cartão
+        </span>
+        <span
+          class="px-3 py-1 bg-backgroundSecondary/80 border border-primary/20 rounded-full text-sm font-medium"
+        >
+          🎫 Boleto
+        </span>
+        <span
+          class="px-3 py-1 bg-backgroundSecondary/80 border border-primary/20 rounded-full text-sm font-medium"
+        >
+          ⚡ Pix
+        </span>
+      </div>
+
+      <Cta href="#plans" aria-label="Comprar agora o e-book Fullstack Completo">
+        COMPRAR AGORA
       </Cta>
     </div>
   </section>
 </template>
 
 <style scoped>
-@keyframes color-change {
-  0% {
-    color: #ff6363;
-  }
-  25% {
-    color: #f7b733;
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-size: 200% 200%;
+    background-position: left center;
   }
   50% {
-    color: #4caf50;
-  }
-  75% {
-    color: #3498db;
-  }
-  100% {
-    color: #ff6363;
+    background-size: 200% 200%;
+    background-position: right center;
   }
 }
 
-.animated-text {
-  animation: color-change 8s infinite;
+.animated-gradient {
+  animation: gradient-x 4s ease infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animação sutil para elementos decorativos */
+.group:hover .absolute {
+  animation: float 2s ease-in-out infinite;
 }
 </style>
