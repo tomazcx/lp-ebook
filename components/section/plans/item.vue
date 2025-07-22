@@ -2,44 +2,108 @@
 defineProps<{
   text: string;
   check: boolean;
+  delay?: number;
 }>();
 </script>
 
 <template>
   <li
-    class="flex items-center gap-4 text-base lg:text-lg font-medium group hover:bg-primary/5 rounded-lg p-2 transition-all duration-300"
+    class="flex items-center gap-4 text-base font-medium group hover:bg-gradient-to-r hover:from-blue-500/5 hover:to-purple-500/5 rounded-xl p-3 transition-all duration-500 hover:scale-102 animate-fade-in-item"
+    :style="{ animationDelay: `${delay || 0}ms` }"
   >
-    <!-- Ícone com efeito -->
-    <div class="relative flex-shrink-0">
+    <!-- Enhanced icon with tech styling -->
+    <div
+      class="relative flex-shrink-0 group-hover:scale-110 transition-transform duration-300"
+    >
+      <!-- Glow effect -->
       <div
-        class="absolute inset-0 bg-cta/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        class="absolute inset-0 bg-emerald-400/30 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all duration-500 animate-pulse"
         v-if="check"
       ></div>
+
+      <!-- Icon container -->
       <div
-        class="relative bg-cta/10 rounded-full p-1 border border-cta/30"
+        class="relative bg-gradient-to-br from-emerald-500/20 to-blue-500/20 rounded-full p-2 border border-emerald-400/30 backdrop-blur-sm group-hover:border-emerald-400/60 transition-all duration-300"
         v-if="check"
       >
-        <PhosphorIconCheck class="text-cta relative z-10" :size="20" />
+        <!-- Inner glow -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-emerald-400/10 to-blue-400/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        ></div>
+
+        <PhosphorIconCheck
+          class="text-emerald-400 relative z-10 group-hover:text-emerald-300 transition-colors duration-300"
+          :size="18"
+        />
       </div>
-      <PhosphorIconX class="text-red-500" :size="20" v-else />
+
+      <div
+        class="relative bg-red-500/20 rounded-full p-2 border border-red-400/30"
+        v-else
+      >
+        <PhosphorIconX class="text-red-400" :size="18" />
+      </div>
     </div>
 
-    <!-- Texto com efeito hover -->
+    <!-- Enhanced text with better typography -->
     <span
       :class="{
         'line-through text-textSecondary': !check,
-        'text-text group-hover:text-primary transition-colors duration-300':
+        'text-text group-hover:text-white transition-colors duration-300':
           check,
       }"
-      class="leading-relaxed"
+      class="leading-relaxed flex-1 group-hover:translate-x-1 transition-transform duration-300"
     >
       {{ text }}
     </span>
 
-    <!-- Indicador de destaque -->
+    <!-- Tech accent indicator -->
     <div
-      class="w-0 h-0.5 bg-gradient-to-r from-cta to-accent group-hover:w-2 transition-all duration-300 rounded-full ml-auto"
+      class="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0"
       v-if="check"
-    ></div>
+    >
+      <!-- Animated dots -->
+      <div class="flex gap-1">
+        <div
+          class="w-1 h-1 bg-emerald-400 rounded-full animate-ping"
+          style="animation-delay: 0ms"
+        ></div>
+        <div
+          class="w-1 h-1 bg-blue-400 rounded-full animate-ping"
+          style="animation-delay: 200ms"
+        ></div>
+        <div
+          class="w-1 h-1 bg-purple-400 rounded-full animate-ping"
+          style="animation-delay: 400ms"
+        ></div>
+      </div>
+
+      <!-- Progress bar -->
+      <div
+        class="w-0 h-0.5 bg-gradient-to-r from-emerald-400 to-blue-400 group-hover:w-4 transition-all duration-500 rounded-full"
+      ></div>
+    </div>
   </li>
 </template>
+
+<style scoped>
+@keyframes fade-in-item {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-item {
+  animation: fade-in-item 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
+</style>
