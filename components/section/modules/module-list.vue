@@ -17,33 +17,80 @@ const splitModules = computed(() => {
 </script>
 
 <template>
-  <!-- Grid responsivo para mobile -->
-  <ul class="flex flex-col gap-4 lg:hidden">
-    <slot
-      v-for="module in modules"
-      :key="'key-' + module.label"
-      :label="module.label"
-      :icon="module.icon"
-    />
-  </ul>
+  <!-- Mobile Grid - Stack vertical -->
+  <div class="lg:hidden">
+    <ul class="grid grid-cols-1 gap-4">
+      <slot
+        v-for="(module, index) in modules"
+        :key="'mobile-' + module.label"
+        :label="module.label"
+        :icon="module.icon"
+      />
+    </ul>
+  </div>
 
-  <!-- Grid para desktop com melhor espaçamento -->
-  <div class="hidden lg:flex lg:gap-6 lg:justify-center">
-    <ul class="flex w-full flex-col gap-4 items-center">
-      <slot
-        v-for="module in splitModules.firstColumn"
-        :key="'key-' + module.label"
-        :label="module.label"
-        :icon="module.icon"
-      />
-    </ul>
-    <ul class="flex w-full flex-col gap-4 items-center">
-      <slot
-        v-for="module in splitModules.secondColumn"
-        :key="'key-' + module.label"
-        :label="module.label"
-        :icon="module.icon"
-      />
-    </ul>
+  <!-- Tablet Grid - 2 columns -->
+  <div class="hidden lg:block xl:hidden">
+    <div class="grid grid-cols-2 gap-6">
+      <ul class="space-y-4">
+        <slot
+          v-for="(module, index) in splitModules.firstColumn"
+          :key="'tablet-first-' + module.label"
+          :label="module.label"
+          :icon="module.icon"
+        />
+      </ul>
+      <ul class="space-y-4">
+        <slot
+          v-for="(module, index) in splitModules.secondColumn"
+          :key="'tablet-second-' + module.label"
+          :label="module.label"
+          :icon="module.icon"
+        />
+      </ul>
+    </div>
+  </div>
+
+  <!-- Desktop Grid - 3 columns optimized -->
+  <div class="hidden xl:block">
+    <div class="grid grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- First Column -->
+      <ul class="space-y-4">
+        <slot
+          v-for="(module, index) in modules.slice(
+            0,
+            Math.ceil(modules.length / 3)
+          )"
+          :key="'desktop-first-' + module.label"
+          :label="module.label"
+          :icon="module.icon"
+        />
+      </ul>
+
+      <!-- Second Column -->
+      <ul class="space-y-4">
+        <slot
+          v-for="(module, index) in modules.slice(
+            Math.ceil(modules.length / 3),
+            Math.ceil((modules.length * 2) / 3)
+          )"
+          :key="'desktop-second-' + module.label"
+          :label="module.label"
+          :icon="module.icon"
+        />
+      </ul>
+
+      <!-- Third Column -->
+      <ul class="space-y-4">
+        <slot
+          v-for="(module, index) in modules.slice(
+            Math.ceil((modules.length * 2) / 3)
+          )"
+          :key="'desktop-third-' + module.label"
+          :label="module.label"
+          :icon="module.icon"
+        />
+      </ul>
+    </div>
   </div>
 </template>
