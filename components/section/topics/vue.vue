@@ -1,6 +1,10 @@
 <template>
   <section
     class="relative flex flex-col gap-12 lg:gap-16 overflow-hidden py-16 lg:py-24"
+    aria-labelledby="topics-heading"
+    role="region"
+    itemscope
+    itemtype="https://schema.org/Course"
   >
     <!-- Background tecnológico avançado -->
     <div class="absolute inset-0 overflow-hidden">
@@ -134,7 +138,9 @@
         <Heading>
           <template #title>
             <h2
+              id="topics-heading"
               class="text-center lg:text-left text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight"
+              itemprop="name"
             >
               <span
                 class="inline-block animate-text-reveal"

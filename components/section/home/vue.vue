@@ -2,6 +2,9 @@
   <section
     class="relative min-h-screen flex flex-col lg:flex-row gap-12 lg:gap-16 lg:grid lg:grid-cols-2 items-center overflow-hidden px-4 lg:px-0"
     aria-labelledby="main-title"
+    role="banner"
+    itemscope
+    itemtype="https://schema.org/Product"
   >
     <!-- Background animado com partículas tecnológicas -->
     <div class="absolute inset-0 overflow-hidden">
@@ -123,6 +126,7 @@
             <h1
               id="main-title"
               class="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight"
+              itemprop="name"
             >
               <span
                 class="inline-block animate-text-reveal"
@@ -165,6 +169,7 @@
             <div class="animate-slide-in-left" style="animation-delay: 1.4s">
               <p
                 class="text-base lg:text-lg xl:text-xl mt-6 leading-relaxed text-text/90"
+                itemprop="description"
               >
                 Este é o segredo que vai colocar você à frente da concorrência:
                 aqui você aprenderá todas as habilidades e tecnologias

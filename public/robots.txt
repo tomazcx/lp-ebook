@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ebook.umporcentoprogramador.com.br/sitemap.xml
+
+# Optimized for programming ebook keywords
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block unnecessary paths
+Disallow: /api/
+Disallow: /.nuxt/
+Disallow: /node_modules/
+Disallow: /_nuxt/
+
+# Allow social media bots for better sharing
+User-agent: facebookexternalhit/*
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /

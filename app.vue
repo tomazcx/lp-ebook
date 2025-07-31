@@ -1,25 +1,61 @@
 <script setup lang="ts">
 useHead({
   title:
-    "E-book Fullstack Completo: Aprenda a programar do zero e construa seus primeiros projetos",
+    "Ebook de Programação Fullstack Completo | Do Zero ao Primeiro Projeto | Curso Programação",
   meta: [
     {
       name: "description",
       content:
-        "Descubra como sair do zero e se tornar um programador fullstack com o método que me colocou no mercado. E-book de programação completo e direto ao ponto.",
+        "📖 Ebook de programação completo para se tornar programador fullstack do zero. Aprenda HTML, CSS, JavaScript, React, Node.js com projetos práticos. Curso de programação direto ao ponto que colocou centenas no mercado de trabalho.",
+    },
+    {
+      name: "keywords",
+      content:
+        "ebook de programação, curso programação, aprender programar do zero, programador fullstack, ebook programador, curso desenvolvimento web, aprender programação, ebook javascript, curso html css, livro programação",
+    },
+    {
+      name: "author",
+      content: "Um Por Cento Programador",
     },
     {
       name: "robots",
-      content: "index, follow",
+      content:
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    },
+    {
+      name: "googlebot",
+      content:
+        "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    },
+    {
+      name: "language",
+      content: "pt-BR",
+    },
+    {
+      name: "geo.region",
+      content: "BR",
+    },
+    {
+      name: "geo.country",
+      content: "Brazil",
+    },
+    {
+      name: "distribution",
+      content: "global",
+    },
+    {
+      name: "rating",
+      content: "general",
     },
     {
       property: "og:title",
-      content: "E-book Fullstack Completo: Aprenda a programar do zero",
+      content:
+        "Ebook de Programação Fullstack Completo | Aprenda do Zero ao Primeiro Projeto",
     },
     {
       property: "og:description",
       content:
-        "Transforme sua carreira com o e-book que te mostra o caminho completo para se tornar fullstack.",
+        "📖 O ebook de programação mais completo do Brasil. Transforme sua carreira aprendendo programação fullstack do zero com projetos práticos. HTML, CSS, JavaScript, React, Node.js e muito mais!",
     },
     {
       property: "og:type",
@@ -28,6 +64,161 @@ useHead({
     {
       property: "og:url",
       content: "https://ebook.umporcentoprogramador.com.br",
+    },
+    {
+      property: "og:site_name",
+      content: "Um Por Cento Programador - Ebook Programação",
+    },
+    {
+      property: "og:locale",
+      content: "pt_BR",
+    },
+    {
+      property: "og:image",
+      content: "https://ebook.umporcentoprogramador.com.br/book.png",
+    },
+    {
+      property: "og:image:alt",
+      content: "Capa do Ebook de Programação Fullstack Completo",
+    },
+    {
+      property: "og:image:width",
+      content: "500",
+    },
+    {
+      property: "og:image:height",
+      content: "700",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:title",
+      content: "Ebook de Programação Fullstack | Do Zero ao Programador",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "📖 Ebook completo para aprender programação do zero. HTML, CSS, JS, React, Node.js com projetos práticos!",
+    },
+    {
+      name: "twitter:image",
+      content: "https://ebook.umporcentoprogramador.com.br/book.png",
+    },
+    {
+      name: "twitter:image:alt",
+      content: "Ebook de Programação Fullstack Completo",
+    },
+    {
+      name: "theme-color",
+      content: "#B692E6",
+    },
+    {
+      name: "apple-mobile-web-app-capable",
+      content: "yes",
+    },
+    {
+      name: "apple-mobile-web-app-status-bar-style",
+      content: "black-translucent",
+    },
+    {
+      name: "msapplication-TileColor",
+      content: "#B692E6",
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: "https://ebook.umporcentoprogramador.com.br",
+    },
+    {
+      rel: "alternate",
+      type: "application/rss+xml",
+      title: "Ebook de Programação - RSS",
+      href: "https://ebook.umporcentoprogramador.com.br/rss.xml",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Book",
+        name: "Ebook Fullstack Completo: Aprenda Programação do Zero",
+        author: {
+          "@type": "Person",
+          name: "Um Por Cento Programador",
+        },
+        description:
+          "Ebook completo de programação para se tornar programador fullstack do zero. Aprenda HTML, CSS, JavaScript, React, Node.js com projetos práticos.",
+        genre: "Educação, Tecnologia, Programação",
+        inLanguage: "pt-BR",
+        numberOfPages: "300+",
+        publisher: {
+          "@type": "Organization",
+          name: "Um Por Cento Programador",
+        },
+        offers: {
+          "@type": "Offer",
+          price: "37.90",
+          priceCurrency: "BRL",
+          availability: "https://schema.org/InStock",
+          validFrom: "2024-01-01",
+        },
+        keywords:
+          "ebook programação, curso programação, aprender programar, programador fullstack, desenvolvimento web",
+        educationalLevel: "Iniciante a Intermediário",
+        teaches: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "TypeScript",
+          "Bootstrap",
+          "Tailwind CSS",
+          "Git",
+          "Docker",
+          "SQL",
+        ],
+        image: "https://ebook.umporcentoprogramador.com.br/book.png",
+        url: "https://ebook.umporcentoprogramador.com.br",
+      }),
+    },
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Course",
+        name: "Ebook Programação Fullstack Completo",
+        description:
+          "Curso completo em formato ebook para aprender programação fullstack do zero ao primeiro projeto",
+        provider: {
+          "@type": "Organization",
+          name: "Um Por Cento Programador",
+          url: "https://ebook.umporcentoprogramador.com.br",
+        },
+        educationalLevel: "Beginner",
+        inLanguage: "pt-BR",
+        courseMode: "self-paced",
+        teaches: [
+          "Programação Web",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Desenvolvimento Fullstack",
+        ],
+        totalTime: "P30D",
+        offers: {
+          "@type": "Offer",
+          price: "37.90",
+          priceCurrency: "BRL",
+          category: "ebook",
+        },
+      }),
     },
   ],
 });
@@ -69,6 +260,8 @@ const sendPixelEvent = () => {
 <template>
   <div
     class="relative text-text min-h-screen overflow-x-hidden py-20 lg:py-36 px-6 lg:px-44 flex flex-col gap-40"
+    itemscope
+    itemtype="https://schema.org/WebPage"
   >
     <!-- Background tecnológico global -->
     <div class="fixed inset-0 overflow-hidden opacity-5 pointer-events-none">

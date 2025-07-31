@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Preload critical fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+/* Performance Critical CSS */
+
+/* Critical above-the-fold styles */
+html {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #13091f;
+  color: #e9e1f3;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optimize images for Core Web Vitals */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Reduce layout shift */
+.aspect-ratio-preserve {
+  aspect-ratio: 5/7; /* Book cover ratio */
+}
+
+/* Critical performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+/* Optimize animations for performance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Improve text rendering */
+.text-rendering-optimize {
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+}
+
+/* Optimize will-change for animations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-auto {
+  will-change: auto;
+}
+
+/* Skeleton loading for images */
+.skeleton {
+  background: linear-gradient(90deg, #251737 25%, #2a1a3a 50%, #251737 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Focus accessibility improvements */
+.focus-visible {
+  outline: 2px solid #b692e6;
+  outline-offset: 2px;
+}
+
+/* Optimize for touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .hover-scale {
+    transform: none !important;
+  }
+}
