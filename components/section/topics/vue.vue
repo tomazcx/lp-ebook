@@ -166,7 +166,7 @@
                 class="inline-block animate-text-reveal"
                 style="animation-delay: 1s"
               >
-                aos
+                &nbsp;aos
               </span>
               <br />
               <span
