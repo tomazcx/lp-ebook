@@ -2,6 +2,9 @@
   <section
     class="relative lg:grid lg:grid-cols-2 items-center gap-16 lg:gap-20"
     aria-labelledby="section-fullstack"
+    role="main"
+    itemscope
+    itemtype="https://schema.org/EducationalOrganization"
   >
     <!-- Background decorativo -->
     <div class="absolute inset-0 overflow-hidden opacity-10">
@@ -40,9 +43,9 @@
 
         <img
           src="/book.png"
-          alt="Capa do E-book Fullstack Completo"
+          alt="Ebook de Programação Fullstack Completo - Aprenda HTML, CSS, JavaScript, React, Node.js do zero com projetos práticos"
           width="500"
-          height="auto"
+          height="700"
           class="relative z-10 mx-auto transform group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />
@@ -60,7 +63,7 @@
     <div class="lg:col-span-1 relative z-10">
       <Heading>
         <template #title>
-          <h2 id="section-fullstack">
+          <h2 id="section-fullstack" itemprop="name">
             Domine desenvolvimento
             <strong class="text-primary">FullStack</strong> com nosso e-book de
             programação completo
@@ -126,10 +129,11 @@
       >
         <img
           src="/book.png"
-          alt="Capa do E-book Fullstack Completo"
+          alt="Ebook de Programação Fullstack Completo - Curso completo de desenvolvimento web do zero ao primeiro projeto"
           class="mx-auto transform group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
           width="280"
+          height="392"
         />
       </div>
     </div>
