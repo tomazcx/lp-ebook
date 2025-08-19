@@ -32,6 +32,11 @@ export default defineNuxtConfig({
       routes: ["/", "/sitemap.xml", "/robots.txt"],
     },
     compressPublicAssets: true,
+    routeRules: {
+      "/sitemap.xml": {
+        headers: { "Content-Type": "application/xml" },
+      },
+    },
   },
   tailwindcss: {
     config: {
