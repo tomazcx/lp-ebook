@@ -60,7 +60,7 @@
             <span>const</span> <span class="text-primary/20">success</span> = ()
             => {<br />
             &nbsp;&nbsp;<span class="text-cta/20">return</span>
-            <span class="text-accent/20">'fullstack'</span>;<br />
+            <span class="text-accent/20">'programação'</span>;<br />
             };
           </div>
         </div>
@@ -149,7 +149,7 @@
                 <span
                   class="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient-x"
                 >
-                  programador fullstack
+                  programador profissional
                 </span>
                 <div
                   class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-xl -z-10 animate-pulse"
@@ -172,9 +172,9 @@
                 itemprop="description"
               >
                 Este é o segredo que vai colocar você à frente da concorrência:
-                aqui você aprenderá todas as habilidades e tecnologias
-                necessárias para se tornar um programador profissional,
-                conquistando
+                aqui você aprenderá todas as habilidades e tecnologias de
+                programação necessárias para se tornar um desenvolvedor
+                profissional, conquistando
                 <strong class="relative text-primary font-black">
                   <span class="relative z-10"
                     >altos salários enquanto trabalha do conforto da sua
@@ -396,7 +396,7 @@
           <div class="mt-4 flex justify-center">
             <Cta
               href="#plans"
-              aria-label="Comprar agora o e-book Fullstack Completo"
+              aria-label="Comprar agora o e-book de Programação Completo"
             >
               COMPRAR AGORA
             </Cta>

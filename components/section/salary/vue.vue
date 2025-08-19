@@ -23,7 +23,7 @@
             Qual o salário médio de um
             <span
               class="text-transparent bg-clip-text bg-gradient-to-r from-cta to-ctaSecondary"
-              >FullStack?</span
+              >Programador?</span
             >
           </h2>
         </template>
@@ -31,7 +31,7 @@
           <p class="text-center text-xl lg:text-2xl leading-relaxed">
             Veja os salários reais do mercado e
             <strong class="text-cta">descubra seu potencial de ganhos</strong>
-            como desenvolvedor fullstack profissional.
+            como programador e desenvolvedor web profissional.
           </p>
         </template>
       </Heading>

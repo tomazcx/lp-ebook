@@ -1,17 +1,17 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Ebook de Programação Fullstack Completo | Do Zero ao Primeiro Projeto | Curso Programação",
+    "Ebook de Programação Completo | Aprenda Desenvolvimento Web do Zero | Curso de Programação Online",
   meta: [
     {
       name: "description",
       content:
-        "📖 Ebook de programação completo para se tornar programador fullstack do zero. Aprenda HTML, CSS, JavaScript, React, Node.js com projetos práticos. Curso de programação direto ao ponto que colocou centenas no mercado de trabalho.",
+        "📖 Ebook de programação completo para aprender desenvolvimento web do zero. Domine HTML, CSS, JavaScript, React, Node.js com projetos práticos. Curso de programação online direto ao ponto que formou centenas de programadores profissionais.",
     },
     {
       name: "keywords",
       content:
-        "ebook de programação, curso programação, aprender programar do zero, programador fullstack, ebook programador, curso desenvolvimento web, aprender programação, ebook javascript, curso html css, livro programação",
+        "ebook de programação, curso programação online, aprender programação do zero, desenvolvimento web, programador, curso de programação, ebook programador, livro programação, programação web, tutorial programação, material didático programação, guia programação completo",
     },
     {
       name: "author",
@@ -50,12 +50,12 @@ useHead({
     {
       property: "og:title",
       content:
-        "Ebook de Programação Fullstack Completo | Aprenda do Zero ao Primeiro Projeto",
+        "Ebook de Programação Completo | Aprenda Desenvolvimento Web do Zero ao Profissional",
     },
     {
       property: "og:description",
       content:
-        "📖 O ebook de programação mais completo do Brasil. Transforme sua carreira aprendendo programação fullstack do zero com projetos práticos. HTML, CSS, JavaScript, React, Node.js e muito mais!",
+        "📖 O ebook de programação mais completo do Brasil. Transforme sua carreira aprendendo desenvolvimento web do zero com projetos práticos. HTML, CSS, JavaScript, React, Node.js e muito mais!",
     },
     {
       property: "og:type",
@@ -67,7 +67,8 @@ useHead({
     },
     {
       property: "og:site_name",
-      content: "Um Por Cento Programador - Ebook Programação",
+      content:
+        "Um Por Cento Programador - Ebook de Programação e Desenvolvimento Web",
     },
     {
       property: "og:locale",
@@ -79,7 +80,7 @@ useHead({
     },
     {
       property: "og:image:alt",
-      content: "Capa do Ebook de Programação Fullstack Completo",
+      content: "Capa do Ebook de Programação e Desenvolvimento Web Completo",
     },
     {
       property: "og:image:width",
@@ -95,12 +96,13 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Ebook de Programação Fullstack | Do Zero ao Programador",
+      content:
+        "Ebook de Programação Completo | Do Zero ao Programador Profissional",
     },
     {
       name: "twitter:description",
       content:
-        "📖 Ebook completo para aprender programação do zero. HTML, CSS, JS, React, Node.js com projetos práticos!",
+        "📖 Ebook completo para aprender programação e desenvolvimento web do zero. HTML, CSS, JS, React, Node.js com projetos práticos!",
     },
     {
       name: "twitter:image",
@@ -108,7 +110,7 @@ useHead({
     },
     {
       name: "twitter:image:alt",
-      content: "Ebook de Programação Fullstack Completo",
+      content: "Ebook de Programação e Desenvolvimento Web Completo",
     },
     {
       name: "theme-color",
@@ -145,13 +147,13 @@ useHead({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Book",
-        name: "Ebook Fullstack Completo: Aprenda Programação do Zero",
+        name: "Ebook de Programação Completo: Aprenda Desenvolvimento Web do Zero",
         author: {
           "@type": "Person",
           name: "Um Por Cento Programador",
         },
         description:
-          "Ebook completo de programação para se tornar programador fullstack do zero. Aprenda HTML, CSS, JavaScript, React, Node.js com projetos práticos.",
+          "Ebook completo de programação para aprender desenvolvimento web do zero. Domine HTML, CSS, JavaScript, React, Node.js com projetos práticos e torne-se um programador profissional.",
         genre: "Educação, Tecnologia, Programação",
         inLanguage: "pt-BR",
         numberOfPages: "300+",
@@ -167,7 +169,7 @@ useHead({
           validFrom: "2024-01-01",
         },
         keywords:
-          "ebook programação, curso programação, aprender programar, programador fullstack, desenvolvimento web",
+          "ebook programação, curso programação online, aprender programação, desenvolvimento web, programador, tutorial programação, livro programação digital",
         educationalLevel: "Iniciante a Intermediário",
         teaches: [
           "HTML",
@@ -191,9 +193,9 @@ useHead({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Course",
-        name: "Ebook Programação Fullstack Completo",
+        name: "Ebook de Programação e Desenvolvimento Web Completo",
         description:
-          "Curso completo em formato ebook para aprender programação fullstack do zero ao primeiro projeto",
+          "Curso completo em formato ebook para aprender programação e desenvolvimento web do zero ao primeiro projeto profissional",
         provider: {
           "@type": "Organization",
           name: "Um Por Cento Programador",
@@ -204,12 +206,14 @@ useHead({
         courseMode: "self-paced",
         teaches: [
           "Programação Web",
+          "Desenvolvimento Web",
           "HTML",
           "CSS",
           "JavaScript",
           "React",
           "Node.js",
-          "Desenvolvimento Fullstack",
+          "Programação Frontend",
+          "Programação Backend",
         ],
         totalTime: "P30D",
         offers: {
@@ -223,7 +227,7 @@ useHead({
   ],
 });
 
-const { $fbq } = useNuxtApp();
+const { $fbq } = useNuxtApp() as { $fbq: any };
 
 const accepted = ref(false);
 const route = useRoute();

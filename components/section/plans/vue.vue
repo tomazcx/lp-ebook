@@ -131,7 +131,7 @@ watch(
               <span
                 class="bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent"
               >
-                Adquira agora o seu E-book FullStack Pro
+                Adquira agora o seu E-book de Programação Pro
               </span>
             </h2>
           </template>
@@ -141,7 +141,7 @@ watch(
           class="text-textSecondary max-w-2xl mx-auto text-base lg:text-lg leading-relaxed px-4"
         >
           Transforme sua carreira com o pacote completo para se tornar um
-          desenvolvedor FullStack profissional
+          programador e desenvolvedor web profissional
         </p>
       </div>
 
