@@ -1,13 +1,14 @@
 <template>
   <section class="flex flex-col lg:grid lg:grid-cols-2">
-    <Heading class="col-span1">
+    <Heading class="col-span-1">
       <template #title>
         <p class="text-center lg:text-left">Dúvida frequentes</p>
       </template>
       <template #subtitle>
         <p class="text-center lg:text-left">
-          Ainda tem dúvidas? Vejas as perguntas que mais <br class="hidden lg:block" /> recebemos e não perca
-          tempo!
+          Ainda tem dúvidas? Vejas as perguntas que mais
+          <br class="hidden lg:block" />
+          recebemos e não perca tempo!
         </p>
       </template>
     </Heading>
